@@ -1,23 +1,65 @@
-*CIA / CID
-These three concepts form what is commonly referred to as the CIA Triad (or CID Triad). They represent the fundamental security objectives for data, information, and computing services. In Information Security, CIA and CID are core acronyms that define the three basic pillars of data protection. Although they represent the same concepts, the order of the letters varies depending on the language.
+# CIA / CID – Additional Security Concepts
 
-Confidentiality
-Data confidentiality ensures that private or sensitive information is not made available or disclosed to unauthorized individuals. It guarantees that only authorized entities have access to the information.
-Privacy ensures that individuals can control or influence which information about them may be collected and stored, and by whom and to whom such information may be disclosed. A vulnerability in confidentiality may cause an asset to be compromised or leak information, leading to incorrect operation or inaccurate results. For example, stored data values may differ from what they should be because they were improperly modified.
+## Overview
+The CIA Triad (Confidentiality, Integrity, and Availability), also referred to as CID depending on the language, represents the fundamental security objectives for data, information, and computing services. Although the acronyms differ in order, they describe the same core principles that underpin Information Security.
 
-Integrity
-Data integrity ensures that information and programs are modified only in authorized and specified ways, preventing unauthorized alteration of data.
-System integrity ensures that a system performs its intended function in an unimpaired manner, free from unauthorized manipulation, whether deliberate or accidental.
+These principles define the minimum requirements that must be preserved to ensure the protection, reliability, and operational continuity of information systems.
 
-Availability
-Availability ensures that systems operate promptly and that authorized users are not denied access to services. A vulnerability in availability may cause an asset to become unavailable or excessively slow, making the use of a system or network impossible or impractical.
+---
 
-The CIA/CID Triad is the foundation of all security decisions. Every information security measure, policy, or tool must preserve one or more of these principles. Without the CIA Triad, there is no security: if confidentiality fails, data leakage occurs; if integrity fails, data becomes corrupted or tampered with; if availability fails, service disruption occurs. For this reason, every security professional must understand and apply the CIA/CID Triad as a central reference for protecting critical systems, networks, and information.
+## Confidentiality
+Confidentiality ensures that sensitive or private information is not disclosed or made available to unauthorized individuals. It guarantees that only authorized entities are able to access protected data.
 
-Although the use of the CIA/CID Triad to define security objectives is well established, some security professionals believe that additional concepts are required to provide a more complete security model. Two of the most commonly cited are the following:
+Privacy is closely related to confidentiality and ensures that individuals can control or influence which information about them is collected, stored, and disclosed, as well as to whom such information may be revealed.
 
-Authenticity
-The property of being genuine, verifiable, and trustworthy; confidence in the validity of a transmission, a message, or the originator of a message. This means verifying that users are who they claim to be and that all data received by a system originates from a trusted source.
+A breach of confidentiality may result in information leakage, unauthorized exposure of data, or incorrect system behavior. For example, improperly modified or exposed data values may cause systems to operate incorrectly or produce inaccurate results.
 
-Accountability
-This security objective requires that the actions of an entity can be traced and uniquely attributed to that entity. It supports non-repudiation, deterrence, fault isolation, intrusion detection and prevention, as well as recovery and legal action following an incident. Since truly secure systems are not yet an achievable goal, it must be possible to trace a security breach back to the responsible entity. Systems must maintain activity records to enable forensic analysis, allowing security violations to be traced or disputes over transactions to be resolved.
+---
+
+## Integrity
+Integrity ensures that data and systems are accurate, complete, and trustworthy.
+
+- **Data Integrity** guarantees that information and programs are modified only in authorized and approved ways, preventing unauthorized alteration or corruption.
+- **System Integrity** ensures that a system performs its intended functions without unauthorized manipulation, whether intentional or accidental.
+
+A failure of integrity may lead to data tampering, fraud, incorrect processing, or loss of trust in systems and services.
+
+---
+
+## Availability
+Availability ensures that systems and services remain accessible and functional for authorized users when needed. This includes protection against service disruptions, performance degradation, and denial-of-service conditions.
+
+A vulnerability affecting availability may cause systems or network resources to become unavailable or excessively slow, making their use impossible or impractical for legitimate users.
+
+---
+
+## Importance of the CIA / CID Triad
+The CIA/CID Triad is the foundation of all information security decisions. Every security control, policy, or tool exists to preserve one or more of these principles.
+
+- If **Confidentiality** fails, data breaches and information leakage occur.
+- If **Integrity** fails, data becomes corrupted or manipulated.
+- If **Availability** fails, services are disrupted or rendered inaccessible.
+
+For this reason, security professionals must understand and apply the CIA/CID Triad as a central reference when designing, implementing, and operating secure systems, networks, and services.
+
+---
+
+## Additional Security Concepts
+While the CIA/CID Triad is well established, some security models extend it with additional principles to provide a more comprehensive view of security.
+
+---
+
+## Authenticity
+Authenticity refers to the assurance that an entity, message, or data source is genuine, verifiable, and trustworthy. It provides confidence in the validity of communications, messages, and their origin.
+
+In practice, authenticity ensures that:
+- Users are who they claim to be
+- Data originates from trusted and verified sources
+- Communications have not been forged or impersonated
+
+---
+
+## Accountability
+Accountability ensures that the actions of an entity can be traced and uniquely attributed to that entity. This principle supports non-repudiation, deterrence, fault isolation, intrusion detection and prevention, and post-incident recovery and legal actions.
+
+Because perfectly secure systems are not realistically achievable, it must be possible to trace security violations back to the responsible entity. Systems must maintain logs and activity records to enable forensic analysis, allowing organizations to investigate incidents, trace breaches, and resolve disputes related to transactions or system usage.
